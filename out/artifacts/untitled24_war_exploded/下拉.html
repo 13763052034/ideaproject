@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+       function cretrer() {
+           var element=document.createElement("select");
+             for(var i=0;i<10;i++){
+               var op=new Option("内容"+i,i);
+               element.options[i]=op;
+           }
+             element.size=5;
+             element.id="tex";
+             document.getElementById("tex").appendChild(element);
+       }
+    </script>
+</head>
+<body>
+<div id="test">
+    <input type="button" value="下拉列表" onclick="cretrer()"/>
+    <input type="button" value="下拉列表"/>
+    <input type="button" value="下拉列表"/>
+</div>
+</body>
+</html>
